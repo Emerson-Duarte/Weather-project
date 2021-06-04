@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Weather_project</string>
+
+    <string name="profile_name_simple">Simple</string>
+    <string name="profile_name_surf">Surf</string>
+    <string name="profile_description_simple">Simple</string>
+    <string name="profile_description_surf">Simple</string>
+
 </resources>

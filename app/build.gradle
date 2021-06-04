@@ -27,6 +27,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    dataBinding{
+        enabled true
+    }
+
 }
 
 dependencies {
@@ -40,4 +45,19 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:28.0.0')
+
+
+
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    
+    
+    /* Networking */
+    implementation 'com.squareup.retrofit2:retrofit:1.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:1.6.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:1.6.0'
+    implementation 'com.google.code.gson:gson:2.8.7'
 }
