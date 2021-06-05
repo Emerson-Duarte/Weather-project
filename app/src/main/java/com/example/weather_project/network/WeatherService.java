@@ -1,8 +1,15 @@
 package com.example.weather_project.network;
 
 
+import com.example.weather_project.model.DayWeather;
+import com.example.weather_project.model.HourWeather;
 import com.example.weather_project.model.WeatherRecord;
 
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Headers;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 
 /* Classe Serviço
@@ -21,6 +28,6 @@ public interface WeatherService {
     
     
     @GET("forecast/daily")
-    Call<DailyWeather> getDailyWeatherForCity(@Path("username") String pathvar, @Query("q") String queryvar);
+    Call<DayWeather> getDailyWeatherForCity(@Path("username") String pathvar, @Query("q") String queryvar);
 
 }

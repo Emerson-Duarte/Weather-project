@@ -42,11 +42,11 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 
-        imageRegister = findViewById(R.id.imageRegister);
-        submitRegister = findViewById(R.id.SubmitRegister);
-        selectProfile = findViewById(R.id.select_profile);
-        editCity = findViewById(R.id.editCity);
-        editName = findViewById(R.id.editName);
+//        imageRegister = findViewById(R.id.imageRegister);
+//        submitRegister = findViewById(R.id.SubmitRegister);
+//        selectProfile = findViewById(R.id.select_profile);
+//        editCity = findViewById(R.id.editCity);
+//        editName = findViewById(R.id.editName);
 
         String[] array = new String[] {
                 getString(Profile.SIMPLE.getName()),
